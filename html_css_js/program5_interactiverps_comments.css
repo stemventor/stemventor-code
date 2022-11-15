@@ -1,0 +1,41 @@
+/* 
+	This is a Cascading StyleSheet file (.css file) that works on an HTML (.html) file 
+	to provide better looking pages than basic HTML can provide. 
+*/
+
+/* 
+	These are styles that apply to core HTML elements
+	Since html and body are the highest level tags, the styling here
+	applies to the page itself and all content on the page.
+	Individual elements can be further styled to override this high level styling.
+*/
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+/* A class starts with a . followed by the class name */
+.box-title {
+  width: 100%;
+  text-align: center;
+  background-color: lightgreen;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 8px;
+}
+
+.styled-para {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* You can style individual HTML elements directly, without needing a class */
+/* This will affect all instances of the element type */
+/* Use a class if you do not want style elements differently */
+button, input {
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}

@@ -1,0 +1,39 @@
+<!-- 
+  While HTML gives you some basic tags for headings, bold and italics, users today expect applications
+	to look a lot better and have a clean and attractive user interface.
+	A language known as Cascading Style Sheets (CSS) is used to achieve this styling.
+	Each part of an HTML document is referred to as a an element.
+	Depending on the element, various styles are possible.
+	Styles are defined in a .css file in the form of "classes". 
+	These "classes" are then applied to elements where the styling is required.
+-->  
+<html>
+<!-- Inside the head tag you include some information about the page. -->
+<head>
+  <!-- The title is what shows on your browser tab. -->
+  <title>Hello World</title>
+	<!-- Add a link to the CSS file that has the required styling. -->
+	<link href="program3_styling.css" rel="stylesheet" type="text/css" />
+</head>
+<!-- Inside the body tags you include the actual page content to be displayed. -->
+<body>
+  <!-- Let's add some styling to the text -->
+	<!-- Instead of a simple h1 tag let's create a title in a box with a border and a background color and center it -->
+	<!-- Look for the box-title class in the .css file -->
+	<p class="box-title">
+		Using CSS to beautify HTML
+	</p>
+  <p>
+    This is a unstyled paragraph with basic HTML. Here is some more information about HTML. The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+  </p>
+  <p class="styled-para">
+    This is a styled paragraph using a CSS class. Here is some more information about HTML. The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.
+  </p>
+<p class="styled-para">
+  You can style individual words for example, highlight them. Here is some more information about HTML. The <span class="word-highlight">HyperText Markup Language</span> or HTML is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as <span class="word-highlight">Cascading Style Sheets (CSS)</span> and scripting languages such as JavaScript.
+</p>
+<p class="styled-para hover-text">
+  <strong>You can dynamically change the appearance of text based on user action such as a mouse hover.</strong>
+</p>
+</body>
+</html>

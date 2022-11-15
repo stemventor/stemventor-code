@@ -34,29 +34,36 @@ for(index; index <= number_of_rounds; index++){
 	console.log("--------");
 	console.log(player1_name + " called " + player1_call_value + ".");
 	console.log(player2_name + " called " + player2_call_value + ".");
-	console.log("--------");
 
 	if(player1_call_value === "Rock" && player2_call_value === "Paper"){
 		player2_score++;
+    console.log(player2_name + " won!");
 	}
 	else if(player1_call_value === "Rock" && player2_call_value === "Scissors"){
 		player1_score++;
+    console.log(player1_name + " won!");
 	}
 	else if(player1_call_value === "Paper" && player2_call_value === "Rock"){
 		player1_score++;
+    console.log(player1_name + " won!");
 	}
 	else if(player1_call_value === "Paper" && player2_call_value === "Scissors"){
 		player2_score++;
+    console.log(player2_name + " won!");
 	}
 	else if(player1_call_value === "Scissors" && player2_call_value === "Rock"){
 		player2_score++;
+    console.log(player2_name + " won!");
 	}
 	else if(player1_call_value === "Scissors" && player2_call_value === "Paper"){
 		player1_score++;
+    console.log(player1_name + " won!");
 	}
 	else{
 		no_score_count++;
+    console.log("Draw");
 	}
+  console.log("--------");
 }
 
 // Finally, print the scores and declare a winner.
