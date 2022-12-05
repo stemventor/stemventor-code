@@ -3,8 +3,10 @@
 
   Turns an LED on for one second, then off for one second, repeatedly.
 
-  Most Arduinos have an on-board LED you can control. On the UNO
-  it is attached to digital pin 13. The constant LED_BUILTIN is set to
+	Board: Arduino UNO or Arduino Nano
+
+  Most Arduinos have an on-board LED you can control. On the UNO and the Nano
+  it is attached to digital pin 13.  The constant LED_BUILTIN is set to
   the correct LED pin independent of which board is used.
 */
 

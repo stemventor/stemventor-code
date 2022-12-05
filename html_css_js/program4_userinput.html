@@ -1,0 +1,60 @@
+<!-- 
+	Using HTML and CSS you can present very well designed pages hyperlinked to each other 
+	However, they do not provide any processing capability and that is where JavaScript comes in.
+	In this program we will also introduce forms, which are a way to get input from a user.
+	Using a combination of HTML, HTML forms, CSS, and JavaScript we will build a simple version 
+	of a Rock, Paper, Scissors game, where a user can play against the computer. 
+-->
+<html>
+<!-- Inside the head tag you include some information about the page. -->
+<head>
+  <!-- The title is what shows on your browser tab. -->
+  <title>Play Rock-Paper-Scissors</title>
+  <!-- Add a link to the CSS file that has the required styling. -->
+	<link href="program4_userinput.css" rel="stylesheet" type="text/css" />
+  <!-- Add a link to the JavaScript file that has the required functions to be executed for this page. -->
+	<script src="program4_userinput.js"></script>
+</head>
+<!-- Inside the body tags you include the actual page content to be displayed. -->
+<body>
+  <p class="box-title">The Rock-Paper-Scissors Game</p>
+  <p class="styled-para">
+    This is the popular game between two players where each player chooses one of three options and the winner is decided by a hierarchy rule that goes:
+  </p>
+  <ul class="styled-para">
+    <li>Rock beats Scissors</li>
+    <li>Paper beats Rock</li>
+    <li>Scissors beats Paper</li>
+  </ul>
+  <!-- CSS styles can also be defined inline for an element as below. Use only if required for some ad-hoc styling for a specific element, not recommended otherwise, as it can lead to messy code
+  -->
+  <h2 style="font-family: Arial;color:green;">Let's Play!</h2>
+  <p class="styled-para">
+    Enter one of the three options:
+  </p>
+  <!-- A Form is a collection of elements that accept user inputs
+       There are a few types of form elements, the commonly ones being
+       a text input box where the user can input a value 
+       and a button which the user can click on to initiate an action.
+  -->
+  <form>
+    <!-- The form action is processed in the JavaScript code -->
+    <!-- To be able to identify the text box to read the value from 
+         the element is given an id. 
+    -->
+    <input type="text" id="user-call-input" />
+    <!-- All elements have what are known as events which refer to possible user actions. 
+         Each type of element will have its own set of relevant events.
+         For example, a button element will have an "onclick" event.
+         A JavaScript function can be attached to the events that need to be "handled". When the event occurs, such as the user clicking on a button, the attached function is executed.
+    -->
+    <button type="button" onclick="getUserCall()">Play!</button>
+  </form>
+
+  <!-- We can create empty elements as placeholders that will be dynamically populated with values by the Javacript function as it executes. Each element must have an id so the function can identify it. -->
+  <p class="styled-para">
+    <strong>Your call: </strong><span id="your-call"></span>
+  </p>
+  
+</body>
+</html>

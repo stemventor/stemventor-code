@@ -10,17 +10,28 @@ import random
 # Python uses Lists instead of Arrays as in most languages but they are almost the same.
 call_options = ["Rock","Paper","Scissors"]
 
-#print(random.choice(call_options))
+# Initialize the variables you need in the program.
+player_score = 0
+computer_score = 0
+number_of_rounds = 0
+no_score_count = 0
 
+# Display information to the user
 print("Let's play Rock-Paper-Scissors")
+
+# Get the user name as input from the user
 player_name = input("Enter your name: ")
 print("Hello " + player_name)
 
-player_score = 0
-computer_score = 0
+# Get the number of rounds to play as input from the user
+# Since the input is a string data type you have to
+# "cast" it to integer so you can perform arithmetic 
+# calculations with the value.
 
-number_of_rounds = 3
-no_score_count = 0
+# Validate input, keep asking until a valid positive
+# number is entered.
+while number_of_rounds <= 0:
+  number_of_rounds = int(input("How many rounds should we play? "))  
 
 def generateRandomNumber(min, max):
   return random.choice(call_options)
